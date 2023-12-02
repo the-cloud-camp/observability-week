@@ -8,7 +8,7 @@ docker network create grafanet
 ## Action
 **Mimir**
 ```bash
-docker run  --name mimir --network grafanet  -d -p 9009:9009 -v $(pwd)/demo.yaml:/etc/mimir/demo.yaml grafana/mimir --config.file=/etc/mimir/demo.yaml
+docker run  --name mimir --network grafanet  -d -p 9009:9009 -v $(pwd)/mimir.yaml:/etc/mimir/mimir.yaml grafana/mimir --config.file=/etc/mimir/mimir.yaml
 ```
 
 **Mimir**
