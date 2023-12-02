@@ -27,5 +27,7 @@ docker run --network grafanet --name=grafana -d -p 3000:3000 grafana/grafana
 ```
 
 **Information:**
+user: `admin`
+pass: `admin`
 datasource: `loki`
 http://loki:3100
