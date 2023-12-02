@@ -16,7 +16,7 @@ docker run --name agent --network grafanet -v $(pwd):/etc/agent/data -v $(pwd)/a
 ```
 
 **Dashboard**
-```
+```bash
 docker run --network grafanet --name=grafana -d -p 3000:3000 grafana/grafana
 ```
 

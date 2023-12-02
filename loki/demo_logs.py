@@ -27,7 +27,7 @@ class LokiHandler(logging.Handler):
         }
         response = requests.post(self.loki_url, headers=headers, data=json.dumps(data))
         if response.status_code != 204:
-            print(f"Failed to send log to Loki: {response.content}")
+            print("Failed to send log to Loki: {response.content}")
 
 # Configure logging
 logging.basicConfig(level=logging.DEBUG)
