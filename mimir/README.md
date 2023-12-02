@@ -19,3 +19,8 @@ docker run --name=grafana --network grafanet -d -p 3000:3000 grafana/grafana
 **Information:**
 datasource: `prometheus`
 ttp://mimir:9009/prometheus
+
+**How to testing with python(version>=3.x)**
+```bash
+pip install -I -r requirements.txt
+```
