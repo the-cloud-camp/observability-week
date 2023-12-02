@@ -1,10 +1,3 @@
-
-## Action
-**Loki**
-```bash
-docker run --name loki --network grafanet -d -v $(pwd)/loki-config.yaml:/mnt/config/loki-config.yaml -p 3100:3100 grafana/loki:2.9.1 -config.file=/mnt/config/loki-config.yaml
-```
-
 # Loki Workshop
 
 ## Prerequisite
@@ -13,6 +6,11 @@ docker network create grafanet
 ```
 
 ## Action
+**Loki**
+```bash
+docker run --name loki --network grafanet -d -v $(pwd)/loki-config.yaml:/mnt/config/loki-config.yaml -p 3100:3100 grafana/loki:2.9.1 -config.file=/mnt/config/loki-config.yaml
+```
+
 **Promtail**
 ```bash
 docker run --name promtail --network grafanet -d -v $(pwd)/promtail-config.yaml:/mnt/config -v $(pwd)/log:/var/log --link loki grafana/promtail:2.9.1 -config.file=/mnt/config/promtail-config.yaml
