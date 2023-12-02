@@ -1,5 +1,10 @@
 # Mimir Workshop
 
+## Prerequisite
+```bash
+docker network create grafanet
+```
+
 ## Action
 **Mimir**
 ```bash
