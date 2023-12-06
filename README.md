@@ -11,7 +11,7 @@ This lab covers the integration and basic usage of Grafana Loki, Grafana Mimir, 
 
 Refer to the official Grafana documentation for detailed instructions.
 Grafana Dashboard:
-Grafana Loki:
-Grafana Mimir:
-Grafana Tempo:
-Grafana Agent:
+Grafana Loki: https://grafana.com/docs/loki/latest/
+Grafana Mimir: https://grafana.com/docs/mimir/latest/ 
+Grafana Tempo: https://grafana.com/docs/tempo/latest/ 
+Grafana Agent: https://grafana.com/docs/agent/latest/

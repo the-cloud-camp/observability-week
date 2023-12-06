@@ -8,10 +8,10 @@ docker network create grafanet
 ## Action
 **Mimir**
 ```bash
-docker run  --name mimir --network grafanet  -d -p 9009:9009 -v $(pwd)/mimir.yaml:/etc/mimir/mimir.yaml grafana/mimir --config.file=/etc/mimir/mimir.yaml
+docker run  --name mimir --network grafanet  -d -p 9009:9009 -v $(pwd)/mimir.yaml:/etc/mimir/mimir.yaml grafana/mimir -config.file=/etc/mimir/mimir.yaml
 ```
 
-**Mimir**
+**Otel Collector**
 ```bash
 docker run --name otel-collector --network grafanet -p 4318:4318 -p 4317:4317 -d -v $(pwd)/otel-collector.yaml:/etc/otelcol-contrib/config.yaml otel/opentelemetry-collector-contrib:0.90.0
 ```
